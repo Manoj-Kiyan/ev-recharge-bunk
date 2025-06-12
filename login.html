@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EV Recharge - Login</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    form {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required /><br>
+      <input type="password" id="password" placeholder="Password" required /><br>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </div>
+
+  <!-- Firebase config -->
+  <script type="module" src="./scripts/firebase-config.js"></script>
+  <!-- Login logic -->
+  <script type="module" src="./scripts/login.js"></script>
+</body>
+</html>

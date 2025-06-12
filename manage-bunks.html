@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Bunks</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Admin - Manage Bunks</h2>
+
+    <form id="bunkForm">
+      <input type="text" id="name" placeholder="Bunk Name" required><br>
+      <input type="text" id="location" placeholder="Location" required><br>
+      <input type="text" id="address" placeholder="Address" required><br>
+      <button type="submit">Add Bunk</button>
+    </form>
+
+    <hr>
+
+    <h3>Existing Bunks</h3>
+    <div id="bunksList"></div>
+  </div>
+
+  <script type="module" src="scripts/manage-bunks.js"></script>
+</body>
+</html>

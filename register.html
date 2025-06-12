@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EV Recharge - Register</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+      <h2>Register</h2>
+      <form id="registerForm">
+      <input type="email" id="email" placeholder="Email" required /><br>
+      <input type="password" id="password" placeholder="Password" required /><br>
+
+      <label for="role">Select Role:</label><br>
+      <select id="role" required>
+        <option value="">--Select--</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+  <!-- Firebase config -->
+  <script type="module" src="./scripts/firebase-config.js"></script>
+  <!-- Register logic -->
+  <script type="module" src="./scripts/register.js"></script>
+</body>
+</html>

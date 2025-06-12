@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manage Slots</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <div class="container">
+      <h2>Admin - Manage Slots</h2>
+
+      <label>Select Bunk:</label>
+      <select id="bunkSelect">
+        <option value="">-- Select a Bunk --</option>
+      </select>
+
+      <form id="slotForm" style="margin-top: 20px;">
+        <input type="text" id="slotTime" placeholder="e.g. 3:00 PM - 4:00 PM" required>
+        <button type="submit">Add Slot</button>
+      </form>
+
+      <div id="slotList" style="margin-top: 20px;"></div>
+  </div>
+  <script type="module" src="scripts/manage-slots.js"></script>
+</body>
+</html>

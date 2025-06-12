@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .dashboard {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .dashboard h2 {
+      margin-bottom: 20px;
+    }
+    .dashboard button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="dashboard">
+      <h2>Welcome, Admin 👑</h2>
+      <button onclick="window.location.href='manage-bunks.html'">🧱 Manage Bunks</button>
+      <button onclick="window.location.href='manage-slots.html'">⏰ Manage Slots</button>
+      <button onclick="logout()">🚪 Logout</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import { auth } from './scripts/firebase-config.js';
+    import { signOut } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+    function logout() {
+      signOut(auth).then(() => {
+        alert("Logged out");
+        window.location.href = "login.html";
+      });
+    }
+
+    window.logout = logout;
+  </script>
+</body>
+</html>
