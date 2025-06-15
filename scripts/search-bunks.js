@@ -32,7 +32,7 @@ window.bookSlot = (id) => {
 loadBunks();
 
 
-// 🔁 LATER UPGRADE: Enable this function when you have Maps API key
+// 🔁 LATER UPGRADE: Enable this function when  have Maps API key
 /*
 let map;
 

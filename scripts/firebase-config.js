@@ -1,9 +1,9 @@
-// Import the functions you need from the SDKs you need
+// Import the functions  need from the SDKs  need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
-// Your web app's Firebase configuration
+// web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyD7toeThQnuKMR64jASntEk0Iy5vaVNgOA",
   authDomain: "ev-recharge-bunk-e7664.firebaseapp.com",
